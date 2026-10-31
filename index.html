@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devlance Solutions | Custom Software, SaaS, ERP &amp; POS Development</title>
+  <meta name="description"
+    content="Devlance Solutions builds custom software, SaaS products, ERP and POS systems, Flutter mobile apps and business dashboards that help companies run faster and grow with confidence.">
+  <meta name="theme-color" content="#0b2559">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%231565C0'/%3E%3Cpath d='M30 26h22c16 0 26 10 26 24S68 74 52 74H30z' fill='none' stroke='white' stroke-width='9' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- =====================================================
+       NAVIGATION
+  ====================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="Devlance Solutions home">
+        <span class="brand-mark"><i class="fa-solid fa-code"></i></span>
+        <span class="brand-text">Devlance<small>Solutions</small></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#testimonials" class="nav-link">Clients</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Get a Quote <i
+            class="fa-solid fa-arrow-right"></i></a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+        <span class="hero-grid"></span>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow reveal"><i class="fa-solid fa-bolt"></i> Custom Software &middot; SaaS &middot; ERP
+            &middot; POS</span>
+          <h1 class="reveal" data-delay="1">
+            Software engineered for
+            <span class="typed-wrap"><span class="gradient-text" id="typedText"></span><span
+                class="caret"></span></span>
+          </h1>
+          <p class="hero-lead reveal" data-delay="2">
+            Devlance Solutions designs and builds reliable business software &mdash; from petrol pump and retail
+            management systems to full ERP platforms and Flutter mobile apps &mdash; so your team spends less time on
+            paperwork and more time growing.
+          </p>
+          <div class="hero-actions reveal" data-delay="3">
+            <a href="#contact" class="btn btn-light">Start Your Project <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#products" class="btn btn-ghost"><i class="fa-solid fa-circle-play"></i> Explore Products</a>
+          </div>
+          <ul class="hero-points reveal" data-delay="4">
+            <li><i class="fa-solid fa-circle-check"></i> Fixed-scope delivery</li>
+            <li><i class="fa-solid fa-circle-check"></i> Secure cloud architecture</li>
+            <li><i class="fa-solid fa-circle-check"></i> Ongoing support</li>
+          </ul>
+        </div>
+
+        <!-- Product dashboard mockup (pure CSS) -->
+        <div class="hero-visual reveal" data-delay="2" aria-hidden="true">
+          <div class="mock">
+            <div class="mock-bar">
+              <span></span><span></span><span></span>
+              <em>Devlance &middot; Fuel Station Dashboard</em>
+            </div>
+            <div class="mock-body">
+              <aside class="mock-side">
+                <i class="fa-solid fa-gauge-high is-active"></i>
+                <i class="fa-solid fa-gas-pump"></i>
+                <i class="fa-solid fa-users"></i>
+                <i class="fa-solid fa-chart-column"></i>
+                <i class="fa-solid fa-gear"></i>
+              </aside>
+              <div class="mock-main">
+                <div class="mock-kpis">
+                  <div class="mock-kpi"><small>Today's Sales</small><strong>Rs 124,500</strong><em class="up">+8.2%</em>
+                  </div>
+                  <div class="mock-kpi"><small>Credit</small><strong>Rs 15,206</strong><em>Awaiting</em></div>
+                  <div class="mock-kpi accent"><small>Net Cash</small><strong>Rs 51,148</strong><em>Live</em></div>
+                </div>
+                <div class="mock-chart">
+                  <span style="--h:42%"></span><span style="--h:64%"></span><span style="--h:52%"></span>
+                  <span style="--h:78%"></span><span style="--h:60%"></span><span style="--h:88%"></span>
+                  <span style="--h:70%"></span><span style="--h:96%"></span>
+                </div>
+                <div class="mock-rows">
+                  <div><i class="fa-solid fa-droplet"></i> Petrol Tank 01 <b>72%</b></div>
+                  <div><i class="fa-solid fa-droplet"></i> Diesel Tank 02 <b>48%</b></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-card fc-1"><i class="fa-solid fa-arrow-trend-up"></i>
+            <div><small>Revenue</small><strong>+24% this month</strong></div>
+          </div>
+          <div class="float-card fc-2"><i class="fa-solid fa-shield-halved"></i>
+            <div><small>Security</small><strong>Role-based access</strong></div>
+          </div>
+          <div class="float-card fc-3"><i class="fa-solid fa-mobile-screen-button"></i>
+            <div><small>Mobile App</small><strong>iOS &amp; Android</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech stack strip -->
+      <div class="container tech-strip reveal">
+        <span class="tech-label">Built with modern technology</span>
+        <ul class="tech-list">
+          <li><i class="fa-solid fa-mobile-screen"></i> Flutter</li>
+          <li><i class="fa-solid fa-bullseye"></i> Dart</li>
+          <li><i class="fa-solid fa-fire"></i> Firebase</li>
+          <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+          <li><i class="fa-solid fa-database"></i> MongoDB</li>
+          <li><i class="fa-brands fa-python"></i> Python</li>
+          <li><i class="fa-solid fa-plug"></i> REST APIs</li>
+          <li><i class="fa-brands fa-js"></i> JavaScript</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <div class="img-frame">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80"
+              alt="Devlance engineers collaborating on a software project" loading="lazy" data-fallback="devlance-team">
+          </div>
+          <div class="badge-card">
+            <strong data-count="5" data-suffix="+">0</strong>
+            <span>Years building business software</span>
+          </div>
+          <div class="badge-card badge-card-2">
+            <i class="fa-solid fa-star"></i>
+            <span>Client-first delivery</span>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <span class="section-tag reveal">About Devlance</span>
+          <h2 class="section-title reveal" data-delay="1">We turn complex business operations into simple, dependable
+            software</h2>
+          <p class="reveal" data-delay="2">
+            Devlance Solutions is a software company focused on one thing: building systems that businesses actually use
+            every day. We work with owners and operations teams to understand how money, stock, staff and customers move
+            through their business &mdash; and then we design software that makes each of those flows faster, clearer
+            and easier to control.
+          </p>
+          <p class="reveal" data-delay="3">
+            Our flagship Petrol Pump Management System, along with our POS, inventory, billing and ERP products, is
+            shaped by real feedback from the field. Whether you need a ready-to-deploy product or a fully custom
+            platform, you get senior engineering, honest timelines and software that is built to scale.
+          </p>
+          <ul class="check-list reveal" data-delay="4">
+            <li><i class="fa-solid fa-check"></i> Product thinking, not just code delivery</li>
+            <li><i class="fa-solid fa-check"></i> Clean, maintainable architecture you fully own</li>
+            <li><i class="fa-solid fa-check"></i> Transparent communication at every milestone</li>
+            <li><i class="fa-solid fa-check"></i> Training, documentation and long-term support</li>
+          </ul>
+          <div class="about-values reveal" data-delay="5">
+            <div><i class="fa-solid fa-bullseye"></i>
+              <h4>Our Mission</h4>
+              <p>Make professional-grade business software accessible to every growing company.</p>
+            </div>
+            <div><i class="fa-solid fa-eye"></i>
+              <h4>Our Vision</h4>
+              <p>Be the most trusted software partner for operations-heavy industries.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SERVICES
+    ====================================================== -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="section-head center">
+          <span class="section-tag reveal">Our Services</span>
+          <h2 class="section-title reveal" data-delay="1">End-to-end software development for modern businesses</h2>
+          <p class="section-sub reveal" data-delay="2">From the first workshop to production support, we cover the full
+            lifecycle of your software so you work with one accountable team.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="card service-card reveal">
+            <span class="icon-box"><i class="fa-solid fa-laptop-code"></i></span>
+            <h3>Custom Software Development</h3>
+            <p>Tailor-made web and desktop applications designed around your exact workflows, permissions and reporting
+              needs.</p>
+            <a href="#contact" class="card-link">Discuss your idea <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="card service-card reveal" data-delay="1">
+            <span class="icon-box"><i class="fa-solid fa-cloud"></i></span>
+            <h3>SaaS Product Development</h3>
+            <p>Multi-tenant, subscription-ready platforms with secure onboarding, billing logic and scalable cloud
+              infrastructure.</p>
+            <a href="#contact" class="card-link">Build your SaaS <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="card service-card reveal" data-delay="2">
+            <span class="icon-box"><i class="fa-solid fa-sitemap"></i></span>
+            <h3>ERP Systems</h3>
+            <p>Unified modules for finance, inventory, HR, sales and purchasing so every department works from one
+              source of truth.</p>
+            <a href="#contact" class="card-link">Plan your ERP <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="card service-card reveal" data-delay="3">
+            <span class="icon-box"><i class="fa-solid fa-cash-register"></i></span>
+            <h3>POS Systems</h3>
+            <p>Fast, reliable point-of-sale software with barcode support, receipts, shift control and multi-branch
+              reporting.</p>
+            <a href="#contact" class="card-link">Get a POS <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="card service-card reveal">
+            <span class="icon-box"><i class="fa-solid fa-mobile-screen-button"></i></span>
+            <h3>Flutter Mobile Apps</h3>
+            <p>Beautiful, high-performance Android and iOS apps from a single Flutter codebase, connected to your live
+              business data.</p>
+            <a href="#contact" class="card-link">Launch your app <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="card service-card reveal" data-delay="1">
+            <span class="icon-box"><i class="fa-solid fa-chart-pie"></i></span>
+            <h3>Dashboards &amp; Analytics</h3>
+            <p>Real-time dashboards and reports that turn raw sales, stock and expense data into clear decisions for
+              owners.</p>
+            <a href="#contact" class="card-link">See your data <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="card service-card reveal" data-delay="2">
+            <span class="icon-box"><i class="fa-solid fa-briefcase"></i></span>
+            <h3>Business Management Software</h3>
+            <p>Billing, customer ledgers, staff, salaries and expenses in one system built to replace spreadsheets and
+              paper registers.</p>
+            <a href="#contact" class="card-link">Digitise operations <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="card service-card reveal" data-delay="3">
+            <span class="icon-box"><i class="fa-solid fa-plug-circle-bolt"></i></span>
+            <h3>API &amp; Cloud Integration</h3>
+            <p>Secure REST APIs, Firebase backends and third-party integrations that connect your systems and automate
+              routine work.</p>
+            <a href="#contact" class="card-link">Connect systems <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         PRODUCTS
+    ====================================================== -->
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-head center">
+          <span class="section-tag reveal">Our Products</span>
+          <h2 class="section-title reveal" data-delay="1">Ready-to-deploy software, proven in real businesses</h2>
+          <p class="section-sub reveal" data-delay="2">Start with a mature product and tailor it to your operation, or
+            combine several modules into one connected platform.</p>
+        </div>
+
+        <!-- Flagship product -->
+        <div class="flagship reveal">
+          <div class="flagship-copy">
+            <span class="pill"><i class="fa-solid fa-crown"></i> Flagship Product</span>
+            <h3>Petrol Pump Management System</h3>
+            <p>A complete cross-platform system for fuel stations. Track every litre from tank to nozzle, control shifts
+              and cash, manage credit customers and see your true profit in real time.</p>
+            <ul class="flag-list">
+              <li><i class="fa-solid fa-droplet"></i> Tank levels, dip readings &amp; refill tracking</li>
+              <li><i class="fa-solid fa-gas-pump"></i> Machines, nozzles &amp; meter-based shift closing</li>
+              <li><i class="fa-solid fa-book"></i> Customer credit ledger &amp; collections</li>
+              <li><i class="fa-solid fa-users"></i> Staff, attendance &amp; salary management</li>
+              <li><i class="fa-solid fa-file-pdf"></i> Shift reports &amp; PDF exports</li>
+              <li><i class="fa-solid fa-soap"></i> Car wash &amp; engine oil modules</li>
+            </ul>
+            <div class="flag-actions">
+              <a href="#contact" class="btn btn-primary">Request a Demo <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="#features" class="btn btn-outline">View Features</a>
+            </div>
+          </div>
+
+          <div class="flagship-visual" aria-hidden="true">
+            <div class="tank-card">
+              <div class="tank-head"><span class="tank-icon"><i class="fa-solid fa-gas-pump"></i></span>
+                <div><strong>Petrol Tank No 01</strong><small>Capacity 25,000 L</small></div><b class="tank-price">Rs
+                  383/L</b>
+              </div>
+              <div class="tank-row"><span>Stock Level</span><b data-bar-label="72">72%</b></div>
+              <div class="tank-bar"><span data-bar="72"></span></div>
+            </div>
+            <div class="tank-card">
+              <div class="tank-head"><span class="tank-icon green"><i class="fa-solid fa-gas-pump"></i></span>
+                <div><strong>Diesel Tank No 02</strong><small>Capacity 20,000 L</small></div><b class="tank-price">Rs
+                  395/L</b>
+              </div>
+              <div class="tank-row"><span>Stock Level</span><b data-bar-label="48">48%</b></div>
+              <div class="tank-bar"><span data-bar="48"></span></div>
+            </div>
+            <div class="tank-card low">
+              <div class="tank-head"><span class="tank-icon amber"><i
+                    class="fa-solid fa-triangle-exclamation"></i></span>
+                <div><strong>Low Stock Alert</strong><small>Petrol Tank No 03</small></div><b class="tank-price">15%</b>
+              </div>
+              <div class="tank-bar"><span data-bar="15"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product grid -->
+        <div class="grid grid-3 product-grid">
+          <article class="card product-card reveal">
+            <span class="icon-box lg"><i class="fa-solid fa-cash-register"></i></span>
+            <h3>Point of Sale (POS)</h3>
+            <p>Lightning-fast checkout with barcode scanning, split payments, receipt printing and daily closing
+              reports.</p>
+            <ul>
+              <li>Multi-counter &amp; multi-branch</li>
+              <li>Offline-friendly sales</li>
+            </ul>
+          </article>
+          <article class="card product-card reveal" data-delay="1">
+            <span class="icon-box lg"><i class="fa-solid fa-boxes-stacked"></i></span>
+            <h3>Inventory Management</h3>
+            <p>Know exactly what you have, where it is and when to reorder with live stock tracking and low-stock
+              alerts.</p>
+            <ul>
+              <li>Batch &amp; expiry tracking</li>
+              <li>Purchase &amp; supplier records</li>
+            </ul>
+          </article>
+          <article class="card product-card reveal" data-delay="2">
+            <span class="icon-box lg"><i class="fa-solid fa-file-invoice-dollar"></i></span>
+            <h3>Billing System</h3>
+            <p>Professional invoices, quotations and receipts with taxes, discounts and automatic customer balances.</p>
+            <ul>
+              <li>Custom invoice templates</li>
+              <li>PDF &amp; print ready</li>
+            </ul>
+          </article>
+          <article class="card product-card reveal">
+            <span class="icon-box lg"><i class="fa-solid fa-address-book"></i></span>
+            <h3>Customer Management</h3>
+            <p>A complete customer ledger with credit limits, payment history and automatic outstanding balance
+              tracking.</p>
+            <ul>
+              <li>Credit &amp; collection control</li>
+              <li>Statements on demand</li>
+            </ul>
+          </article>
+          <article class="card product-card reveal" data-delay="1">
+            <span class="icon-box lg"><i class="fa-solid fa-building"></i></span>
+            <h3>Business ERP</h3>
+            <p>Finance, sales, purchasing, HR and reporting connected in one modular platform that grows with your
+              company.</p>
+            <ul>
+              <li>Role-based permissions</li>
+              <li>Audit trails &amp; approvals</li>
+            </ul>
+          </article>
+          <article class="card product-card reveal" data-delay="2">
+            <span class="icon-box lg"><i class="fa-solid fa-mobile-screen"></i></span>
+            <h3>Flutter Mobile Applications</h3>
+            <p>Native-quality Android and iOS apps for owners, staff and customers, synced instantly with your back
+              office.</p>
+            <ul>
+              <li>One codebase, two platforms</li>
+              <li>Push notifications</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         WHY CHOOSE US
+    ====================================================== -->
+    <section class="section section-dark" id="why">
+      <div class="container why-grid">
+        <div class="why-intro">
+          <span class="section-tag light reveal">Why Choose Us</span>
+          <h2 class="section-title reveal" data-delay="1">A software partner that behaves like part of your team</h2>
+          <p class="reveal" data-delay="2">Businesses choose Devlance because we combine engineering depth with a
+            practical understanding of day-to-day operations. We build what you need, explain it clearly and stay with
+            you after launch.</p>
+          <a href="#contact" class="btn btn-light reveal" data-delay="3">Talk to an Expert <i
+              class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="why-cards">
+          <div class="why-card reveal"><span>01</span>
+            <h4>Domain expertise</h4>
+            <p>Hands-on experience in fuel stations, retail, billing and multi-branch operations.</p>
+          </div>
+          <div class="why-card reveal" data-delay="1"><span>02</span>
+            <h4>Senior engineers</h4>
+            <p>Experienced developers write and review your code &mdash; no hand-offs to juniors.</p>
+          </div>
+          <div class="why-card reveal" data-delay="2"><span>03</span>
+            <h4>Transparent pricing</h4>
+            <p>Clear scope, milestones and costs agreed up front with no hidden surprises.</p>
+          </div>
+          <div class="why-card reveal" data-delay="3"><span>04</span>
+            <h4>Security by design</h4>
+            <p>Role-based access, encrypted data and safe backups built into every system.</p>
+          </div>
+          <div class="why-card reveal" data-delay="4"><span>05</span>
+            <h4>Fast delivery</h4>
+            <p>Agile sprints with working demos every week so you see progress early.</p>
+          </div>
+          <div class="why-card reveal" data-delay="5"><span>06</span>
+            <h4>Lifelong support</h4>
+            <p>Training, maintenance and feature upgrades long after your launch day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         FEATURES
+    ====================================================== -->
+    <section class="section" id="features">
+      <div class="container features-grid">
+        <div class="features-copy">
+          <span class="section-tag reveal">Platform Features</span>
+          <h2 class="section-title reveal" data-delay="1">Everything you need to run, monitor and grow your business
+          </h2>
+          <p class="section-sub reveal" data-delay="2">Every Devlance product is built on the same powerful foundation
+            of features that owners and teams rely on daily.</p>
+
+          <ul class="feature-list">
+            <li class="reveal"><span class="icon-box sm"><i class="fa-solid fa-gauge-high"></i></span>
+              <div>
+                <h4>Real-time dashboards</h4>
+                <p>Live sales, cash, credit and stock figures the moment they change.</p>
+              </div>
+            </li>
+            <li class="reveal" data-delay="1"><span class="icon-box sm"><i class="fa-solid fa-user-shield"></i></span>
+              <div>
+                <h4>Roles &amp; permissions</h4>
+                <p>Owners, managers and attendants each see only what they should.</p>
+              </div>
+            </li>
+            <li class="reveal" data-delay="2"><span class="icon-box sm"><i class="fa-solid fa-file-lines"></i></span>
+              <div>
+                <h4>Automated reports</h4>
+                <p>Shift, sales, expense and ledger reports exported as clean PDFs.</p>
+              </div>
+            </li>
+            <li class="reveal" data-delay="3"><span class="icon-box sm"><i
+                  class="fa-solid fa-cloud-arrow-up"></i></span>
+              <div>
+                <h4>Cloud sync &amp; backup</h4>
+                <p>Data safely stored and available on every device, everywhere.</p>
+              </div>
+            </li>
+            <li class="reveal" data-delay="4"><span class="icon-box sm"><i class="fa-solid fa-bell"></i></span>
+              <div>
+                <h4>Smart alerts</h4>
+                <p>Low stock, cash shortage and overdue credit notifications.</p>
+              </div>
+            </li>
+            <li class="reveal" data-delay="5"><span class="icon-box sm"><i class="fa-solid fa-display"></i></span>
+              <div>
+                <h4>Works everywhere</h4>
+                <p>Responsive on desktop, tablet and mobile with a consistent experience.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="features-media reveal">
+          <div class="img-frame tall">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80"
+              alt="Analytics dashboard showing business performance charts" loading="lazy"
+              data-fallback="devlance-analytics">
+          </div>
+          <div class="overlay-card">
+            <div class="overlay-top"><i class="fa-solid fa-arrow-trend-up"></i><span>Weekly revenue</span></div>
+            <strong>+12.5%</strong>
+            <div class="spark"><span style="--h:40%"></span><span style="--h:55%"></span><span
+                style="--h:48%"></span><span style="--h:70%"></span><span style="--h:62%"></span><span
+                style="--h:90%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         INDUSTRIES
+    ====================================================== -->
+    <section class="section section-alt" id="industries">
+      <div class="container">
+        <div class="section-head center">
+          <span class="section-tag reveal">Industries We Serve</span>
+          <h2 class="section-title reveal" data-delay="1">Software shaped around the way your industry works</h2>
+          <p class="section-sub reveal" data-delay="2">We bring proven workflows and sector knowledge to every project
+            so you start with best practices, not a blank page.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <div class="card industry-card reveal"><i class="fa-solid fa-gas-pump"></i>
+            <h4>Fuel Stations</h4>
+            <p>Tank, nozzle, shift and credit management.</p>
+          </div>
+          <div class="card industry-card reveal" data-delay="1"><i class="fa-solid fa-store"></i>
+            <h4>Retail &amp; Supermarkets</h4>
+            <p>Fast POS, stock control and loyalty.</p>
+          </div>
+          <div class="card industry-card reveal" data-delay="2"><i class="fa-solid fa-pills"></i>
+            <h4>Pharmacies</h4>
+            <p>Batch, expiry and prescription tracking.</p>
+          </div>
+          <div class="card industry-card reveal" data-delay="3"><i class="fa-solid fa-utensils"></i>
+            <h4>Restaurants &amp; Caf&eacute;s</h4>
+            <p>Orders, tables, kitchen and billing.</p>
+          </div>
+          <div class="card industry-card reveal"><i class="fa-solid fa-truck-ramp-box"></i>
+            <h4>Wholesale &amp; Distribution</h4>
+            <p>Bulk orders, routes and receivables.</p>
+          </div>
+          <div class="card industry-card reveal" data-delay="1"><i class="fa-solid fa-hospital"></i>
+            <h4>Healthcare</h4>
+            <p>Patient, billing and records systems.</p>
+          </div>
+          <div class="card industry-card reveal" data-delay="2"><i class="fa-solid fa-graduation-cap"></i>
+            <h4>Education</h4>
+            <p>Students, fees, staff and reporting.</p>
+          </div>
+          <div class="card industry-card reveal" data-delay="3"><i class="fa-solid fa-industry"></i>
+            <h4>Manufacturing</h4>
+            <p>Materials, production and dispatch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         DEVELOPMENT PROCESS
+    ====================================================== -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head center">
+          <span class="section-tag reveal">Development Process</span>
+          <h2 class="section-title reveal" data-delay="1">A clear, predictable path from idea to launch</h2>
+          <p class="section-sub reveal" data-delay="2">Our proven six-step process keeps your project on time, on budget
+            and fully visible at every stage.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="step reveal"><span class="step-num">1</span>
+            <div class="step-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <h4>Discovery</h4>
+            <p>We study your operations, goals and pain points to define what success looks like.</p>
+          </li>
+          <li class="step reveal" data-delay="1"><span class="step-num">2</span>
+            <div class="step-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h4>Planning &amp; Design</h4>
+            <p>Scope, architecture and clickable UI designs are agreed before development begins.</p>
+          </li>
+          <li class="step reveal" data-delay="2"><span class="step-num">3</span>
+            <div class="step-icon"><i class="fa-solid fa-code"></i></div>
+            <h4>Development</h4>
+            <p>Agile sprints deliver working features with regular demos and feedback loops.</p>
+          </li>
+          <li class="step reveal" data-delay="3"><span class="step-num">4</span>
+            <div class="step-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+            <h4>Testing</h4>
+            <p>Rigorous functional, security and device testing catches issues before you do.</p>
+          </li>
+          <li class="step reveal" data-delay="4"><span class="step-num">5</span>
+            <div class="step-icon"><i class="fa-solid fa-rocket"></i></div>
+            <h4>Deployment</h4>
+            <p>Smooth go-live with data migration, staff training and launch support.</p>
+          </li>
+          <li class="step reveal" data-delay="5"><span class="step-num">6</span>
+            <div class="step-icon"><i class="fa-solid fa-headset"></i></div>
+            <h4>Support &amp; Growth</h4>
+            <p>Monitoring, maintenance and new features as your business evolves.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         STATISTICS
+    ====================================================== -->
+    <section class="stats" id="stats">
+      <div class="container stats-grid">
+        <div class="stat reveal"><i class="fa-solid fa-diagram-project"></i><strong data-count="12"
+            data-suffix="+">0</strong><span>Projects Delivered</span></div>
+        <div class="stat reveal" data-delay="1"><i class="fa-solid fa-handshake"></i><strong data-count="12"
+            data-suffix="+">0</strong><span>Happy Clients</span></div>
+        <div class="stat reveal" data-delay="2"><i class="fa-solid fa-layer-group"></i><strong data-count="7"
+            data-suffix="+">0</strong><span>Industries Served</span></div>
+        <div class="stat reveal" data-delay="3"><i class="fa-solid fa-server"></i><strong data-count="99.9"
+            data-decimals="1" data-suffix="%">0</strong><span>Platform Uptime</span></div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         TESTIMONIALS
+    ====================================================== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-head center">
+          <span class="section-tag reveal">Client Testimonials</span>
+          <h2 class="section-title reveal" data-delay="1">Trusted by business owners who value reliability</h2>
+        </div>
+
+        <div class="slider reveal" id="slider">
+          <div class="slider-viewport">
+            <div class="slider-track" id="sliderTrack">
+              <article class="slide">
+                <div class="quote-card">
+                  <i class="fa-solid fa-quote-left quote-icon"></i>
+                  <div class="stars" aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i></div>
+                  <p>Before Devlance, we tracked tank stock and credit customers in registers. Now I can see sales, cash
+                    and fuel levels from my phone. The shift reports alone save our manager hours every day.</p>
+                  <div class="person"><span class="avatar">AK</span>
+                    <div><strong>Ahmed Khan</strong><small>Owner, Fuel Station Group</small></div>
+                  </div>
+                </div>
+              </article>
+              <article class="slide">
+                <div class="quote-card">
+                  <i class="fa-solid fa-quote-left quote-icon"></i>
+                  <div class="stars" aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i></div>
+                  <p>The team understood our retail workflow quickly and delivered a POS that our cashiers learned in a
+                    single afternoon. Stock mismatches have dropped dramatically and support has been quick every time.
+                  </p>
+                  <div class="person"><span class="avatar">SR</span>
+                    <div><strong>Sara Rehman</strong><small>Operations Head, Retail Chain</small></div>
+                  </div>
+                </div>
+              </article>
+              <article class="slide">
+                <div class="quote-card">
+                  <i class="fa-solid fa-quote-left quote-icon"></i>
+                  <div class="stars" aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i></div>
+                  <p>We needed a custom dashboard and mobile app connected to our existing data. Devlance delivered on
+                    schedule, explained every decision clearly and the quality of the Flutter app impressed our whole
+                    team.</p>
+                  <div class="person"><span class="avatar">UM</span>
+                    <div><strong>Usman Malik</strong><small>Director, Distribution Company</small></div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <button class="slider-btn" id="prevBtn" aria-label="Previous testimonial"><i
+                class="fa-solid fa-arrow-left"></i></button>
+            <div class="dots" id="sliderDots" role="tablist" aria-label="Testimonials"></div>
+            <button class="slider-btn" id="nextBtn" aria-label="Next testimonial"><i
+                class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         FAQ
+    ====================================================== -->
+    <section class="section section-alt" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-intro">
+          <span class="section-tag reveal">FAQ</span>
+          <h2 class="section-title reveal" data-delay="1">Questions we hear most often</h2>
+          <p class="reveal" data-delay="2">Can't find what you're looking for? Reach out and our team will respond
+            within one business day.</p>
+          <a href="#contact" class="btn btn-primary reveal" data-delay="3">Ask a Question <i
+              class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false"><span>How long does a custom software project take?</span><i
+                class="fa-solid fa-plus"></i></button>
+            <div class="faq-a">
+              <p>It depends on scope. A focused business tool typically takes 6&ndash;10 weeks, while a full ERP or
+                multi-module platform can take several months. After discovery we give you a clear timeline with
+                milestones.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal" data-delay="1">
+            <button class="faq-q" aria-expanded="false"><span>Can your ready-made products be customised for my
+                business?</span><i class="fa-solid fa-plus"></i></button>
+            <div class="faq-a">
+              <p>Yes. Products like our Petrol Pump Management System, POS and Inventory software are built to be
+                adapted. We can change workflows, add modules, brand the interface and integrate with your existing
+                tools.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal" data-delay="2">
+            <button class="faq-q" aria-expanded="false"><span>Do you build mobile apps as well as web systems?</span><i
+                class="fa-solid fa-plus"></i></button>
+            <div class="faq-a">
+              <p>Absolutely. We build Android and iOS apps with Flutter, so you get one high-quality codebase that runs
+                on both platforms and connects directly to your back-office system.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal" data-delay="3">
+            <button class="faq-q" aria-expanded="false"><span>Who owns the source code and my data?</span><i
+                class="fa-solid fa-plus"></i></button>
+            <div class="faq-a">
+              <p>Your business data always belongs to you. For custom projects, ownership terms for the source code are
+                agreed in the contract, and we document everything so you are never locked in.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal" data-delay="4">
+            <button class="faq-q" aria-expanded="false"><span>How is my data kept secure?</span><i
+                class="fa-solid fa-plus"></i></button>
+            <div class="faq-a">
+              <p>We use role-based access control, encrypted connections, secure authentication and regular cloud
+                backups. Security is designed into the architecture from day one, not added at the end.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal" data-delay="5">
+            <button class="faq-q" aria-expanded="false"><span>Do you provide training and support after launch?</span><i
+                class="fa-solid fa-plus"></i></button>
+            <div class="faq-a">
+              <p>Yes. Every project includes staff training and a support period. We also offer ongoing maintenance
+                plans covering updates, monitoring, bug fixes and new features.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         CONTACT
+    ====================================================== -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <span class="section-tag light reveal">Contact Us</span>
+          <h2 class="section-title reveal" data-delay="1">Let's build something your business will love</h2>
+          <p class="reveal" data-delay="2">Tell us about your project and we'll reply within one business day with next
+            steps and a free consultation.</p>
+
+          <ul class="contact-list">
+            <li class="reveal"><span class="icon-box sm light"><i class="fa-solid fa-envelope"></i></span>
+              <div><small>Email</small><a href="mailto:ahsan.character@gmail.com">ahsan.character@gmail.com</a></div>
+            </li>
+            <li class="reveal" data-delay="1"><span class="icon-box sm light"><i class="fa-solid fa-phone"></i></span>
+              <div><small>Phone / WhatsApp</small><a href="tel:+923010979100">+923010979100
+
+                </a></div>
+            </li>
+            <li class="reveal" data-delay="2"><span class="icon-box sm light"><i
+                  class="fa-solid fa-location-dot"></i></span>
+              <div><small>Location</small><span>Pakistan &middot; Serving clients worldwide</span></div>
+            </li>
+            <li class="reveal" data-delay="3"><span class="icon-box sm light"><i class="fa-solid fa-clock"></i></span>
+              <div><small>Working Hours</small><span>Mon &ndash; Sat, 9:00 AM &ndash; 7:00 PM</span></div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <h3>Request a free consultation</h3>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required>
+              <small class="error" data-error-for="name"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" autocomplete="email" required>
+              <small class="error" data-error-for="email"></small>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="+92 300 0000000" autocomplete="tel">
+              <small class="error" data-error-for="phone"></small>
+            </div>
+            <div class="field">
+              <label for="service">I'm interested in</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option>Petrol Pump Management System</option>
+                <option>POS / Billing System</option>
+                <option>Inventory Management</option>
+                <option>Business ERP</option>
+                <option>Flutter Mobile App</option>
+                <option>Custom Software</option>
+              </select>
+              <small class="error" data-error-for="service"></small>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Project Details</label>
+            <textarea id="message" name="message" rows="5"
+              placeholder="Tell us about your business and what you want to build..." required></textarea>
+            <small class="error" data-error-for="message"></small>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+            <span class="btn-label">Send Message <i class="fa-solid fa-paper-plane"></i></span>
+            <span class="btn-loader"><i class="fa-solid fa-circle-notch fa-spin"></i> Sending...</span>
+          </button>
+          <p class="form-success" id="formSuccess" role="status"><i class="fa-solid fa-circle-check"></i> Thank you!
+            Your message has been received. We'll get back to you within one business day.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand" aria-label="Devlance Solutions home">
+          <span class="brand-mark"><i class="fa-solid fa-code"></i></span>
+          <span class="brand-text">Devlance<small>Solutions</small></span>
+        </a>
+        <p>We design and build custom software, SaaS products, ERP and POS systems and mobile apps that help businesses
+          operate with clarity and confidence.</p>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="#about">About Us</a>
+        <a href="#why">Why Devlance</a>
+        <a href="#process">Our Process</a>
+        <a href="#testimonials">Clients</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="#services">Custom Software</a>
+        <a href="#services">SaaS Development</a>
+        <a href="#services">ERP Systems</a>
+        <a href="#services">Mobile Apps</a>
+        <a href="#services">Dashboards</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Products</h5>
+        <a href="#products">Petrol Pump System</a>
+        <a href="#products">POS</a>
+        <a href="#products">Inventory</a>
+        <a href="#products">Billing</a>
+        <a href="#products">Business ERP</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> Devlance Solutions. All rights reserved.</p>
+      <p>Crafted with care for growing businesses.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
